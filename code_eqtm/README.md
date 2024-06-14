@@ -8,5 +8,5 @@ relationships between sentinel CpG methylation and proximal gene expression (<1M
 
 ## Estimating PEER factors
 
-* 'estimate_peer_factors.R' : learning of hidden determinants in the form of PEER (Probabilistic Estimation of Expression Residuals) from normalized
+* `estimate_peer_factors.R` : learning of hidden determinants in the form of PEER (Probabilistic Estimation of Expression Residuals) from normalized
 and preprocessed gene expression data, including model setup and training. 
