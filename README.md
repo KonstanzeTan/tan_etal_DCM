@@ -62,9 +62,12 @@ PEER factors correspond to hidden sources of variation, learned by Bayesian prob
 
 We elucidated the putative causal contribution of sentinel CpG methylation to DCM and proximal gene expression using [SMR](https://yanglab.westlake.edu.cn/software/smr/#Overview).
 
-The scripts in this repository detail the primary SMR analysis, one-sample MR validation of SMR-significant hits, and colocalisation analysis of genetic associations for the assessed traits
+The scripts in this repository detail the primary SMR analysis, one-sample MR validation of SMR-significant hits, and colocalisation analysis of genetic associations for the assessed traits. 
 
-Software/packages used: SMR, AER(R), coloc(R)
+The primary SMR analysis utilises SNPs linked to sentinel CpG methylation (known as 'methylation quantitative trait loci') derived from MAGNet left ventricular samples in the current investigation, as well as publicly-available genetic associations from the following sources: 
+[GWAS of DCM in UKBiobank cohort](https://humandbs.biosciencedbc.jp/en/hum0197-v3)
+[Left ventricular eQTL from GTex v8 release](https://console.cloud.google.com/storage/browser/gtex-resources?pli=1)
+
 
 ## Weighted gene correlation network analysis (WGCNA)
 
