@@ -9,20 +9,12 @@ Authors
 
 
    * [Quantification and statistical analysis of DNA methylation](#quantification-and-statistical-analysis-of-dna-methylation)
-      * [EPIC meQTL](#epic-meqtl)
-      * [Conditional analysis and pruning](#conditional-analysis-and-pruning)
-   * [meQTL replication meDIPseq](#meqtl-replication-medipseq) 
-   * [Identification of eQTLs and eQTMs](#identification-of-eqtls-and-eqtms)
-   * [Functional analyses of meQTL CpGs](#functional-analyses-of-meqtl-cpgs)
-   * [Functional analyses of meQTL pairs](#functional-analyses-of-meqtl-pairs)
-      * [Chromatin state enrichment](#chromatin-state-enrichment)
-      * [HiC enrichment](#hic-enrichment)
-      * [Regulator enrichment](#regulator-enrichment)
-      * [Enrichment of transcription factor binding sites at trans-meQTL CpG sites](#enrichment-of-transcription-factor-binding-sites-at-trans-meqtl-cpg-sites)
-      * [Network analysis](#network-analysis)
-   * [Identification of iQTL](#identification-of-iqtl)
-   * [EPIC comparison](#epic-comparison)
-   * [Docker](#docker)
+   * [Enrichment analysis of genomic regulatory features](#enrichment-analysis-of-genomic-regulatory-features)
+   * [Expression quantitative trait methylation analysis](#expression-quantitative-trait-methylation-analysis)
+   * [Causal analyses (Mendelian Randomisation and Colocalisation)](#causal-analyses-mendelian-randomisation-and-colocalisation)
+   * [Weighted Gene Correlation Network Analysis (WGCNA)](#weighted-gene-correlation-network-analysis-wgcna)
+   * [Construction of Methylation Risk Score (MRS)](#construction-of-methylation-risk-score-mrs)
+
 
 
 ## Quantification and statistical analysis of DNA methylation 
@@ -74,7 +66,7 @@ The scripts in this repository detail the primary SMR analysis, one-sample MR va
 
 We employed WGCNA to detect co-methylation modules amongst DCM-associated CpGs (discovery EWAS FDR<0.05, SD>0.02).
 
-## Construction of methylation risk score (MRS) from fine-mapping data and examining associations with CVD
+## Construction of methylation risk score (MRS)
 
 Following fine-mapping of 28 DCM sentinel CpGs and testing individual CpGs within fine-mapped regions for CVD trait associations, we constructed CVD-trait specific MRS as a weighted sum of methylation betas from CpGs within fine-mapped regions and tested MRS for association with CVD.
 
