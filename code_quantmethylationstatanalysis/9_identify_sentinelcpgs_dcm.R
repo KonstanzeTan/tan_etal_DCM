@@ -2,7 +2,9 @@
 #' Assign CpGs to unique genomic loci 
 #' 
 #' @description This script assigns candidate sentinel CpGs to unique genomic 
-#' loci (>1Mb apart). 
+#' loci (>1Mb apart), identifies the lead signal at each locus and highlights 
+#' loci wth more than one candidate CpG for conditional analysis to identify
+#' independent signals.
 #'
 #' @author Konstanze Tan <konstanz001@e.ntu.edu.sg>
 #'
