@@ -1,0 +1,17 @@
+#' -----------------------------------------------------------------------------
+#' Title Enrichment and Depletion of genomic features (eFORGE)
+
+#' -----------------------------------------------------------------------------
+
+# steps
+1. cd to directory containing eFORGE software 
+
+2. Example of commands entered to assess enrichment in DHS hypersensitivity sites (Roadmap)
+DHS- Roadmapperl eforge.pl -f ./sentinels_194_ID.csv  --array 850k -data erc2-DHS -label erc2-DHS --noproxy 
+
+# Notes
+
+- use '--depletion' when running depletion analysis
+
+- default eforge.pl script was modified to also output background set overlap with gene regulatory features to enable the calculation of log2 fold enrichment (log2FE). 
+
