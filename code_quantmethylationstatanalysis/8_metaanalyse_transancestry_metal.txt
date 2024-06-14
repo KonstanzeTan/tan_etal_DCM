@@ -1,0 +1,20 @@
+# This script executes an inverse-variance weighted meta-analysis of ancestry-specific regression results of individual CpG loci against DCM (CAU, AA) 
+
+#LOAD THE INPUT FILES
+
+# === DESCRIBE AND PROCESS THE FIRST INPUT FILE ===
+SEPARATOR TAB
+MARKERLABEL CpG
+STDERRLABEL SE_baconcorr
+SCHEME STDERR
+EFFECT Beta_baconcorr
+OUTFILE METAANALYSIS_DCM_AgeGender10PCs_marker095 .txt
+
+PROCESS  regout_CAU_baconcorr.txt
+
+# === THE SECOND INPUT FILE HAS THE SAME FORMAT AND CAN BE PROCESSED IMMEDIATELY ===
+PROCESS regout_AA_baconcorr.txt
+
+ANALYZE HETEROGENEITY
+
+QUIT
