@@ -35,15 +35,17 @@ The main EWAS model is
 DCM ~beta(quantile-normalised) + Age + Gender + principal components of control probes capturing ~95% of control probe variation 
 ```
 
-The scripts in this repository facilitate various tasks in methylation data preprocessing and qualitycontrol, calculation of methylation betas, epigenome-wide association analysis, meta-analysis, adjustment for test-statistic inflation and finally the identification of sentinel CpGs.
+The scripts in this repository facilitate various tasks in methylation data preprocessing and quality control, calculation of methylation betas, epigenome-wide association analysis, meta-analysis, adjustment for test-statistic inflation and finally the identification of sentinel CpGs.
 
 ## Enrichment analysis of genomic regulatory features
 
 We analysed sentinel CpGs for enrichment in various genomic regulatory features using a permutation testing approach, whereby sentinel CpG overlap of genomic regulatory features is compared to a background set comprising permutations of other EPIC array CpGs matched to sentinel CpGs by genomic location, methylation levels and/or variability. This addresses bias inherent in methylation arrays, which preferentially assay pre-determined genomic sites and well-annotated genes
 
-The scripts in this repository outline the manual construction of a background for enrichment analysis, consisting of 1,000 sets of EPIC array CpGs matched to sentinel CpGs by methylation levels and variability. Additionally, they detail the calculation of permutation p-values to assess enrichment.
+Enrichment analysis for tissue-specific chromatin states, histone-marked regions and DNAse 1 hypersensitive sites was conducted using a local installation of eFORGE v2 downloaded from [Altius Institute eForge](https://eforge.altiusinstitute.org/). Besides enrichment, depletion was also investigated by specifying the  `--depletion` flag. Significant enrichment or depletion was not assessed using the default binomial P value output by the software. Instead, we defined significant enrichment or depletion by calculating a permutation P value usign overlap counts from each of the background permutation sets. eFORGE auto-constructs a background set of permuted CpGs matched to sentinel CpGs by CpG island and gene annotation. 
 
-Software/packages used: local installation of eFORGE v2 downloaded from [Altius Institute eForge](https://eforge.altiusinstitute.org/)
+Enrichment analysis for expression quantitative trait methylation loci (eQTM) and transcription factor binding sites (TFBS) were assessed using a manually constructed background set comprising permutations of EPIC array CpGs matched to sentinel CpGs by methylation levels and variability.
+
+The scripts in this repository were used for enrichment analysis and calculation of permutation p values (eFORGE) as well as manual construction of background set of permuted EPIC array CpGs. 
 
 ## Expression quantitative trait methylation analysis
 
