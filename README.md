@@ -8,7 +8,7 @@ Authors
 ## Table of Contents
 
 
-   * [Identification of meQTLs](#identification-of-meqtls)
+   * [Quantification and statistical analysis of DNA methylation](#quantification-and-statistical-analysis-of-dna-methylation)
       * [EPIC meQTL](#epic-meqtl)
       * [Conditional analysis and pruning](#conditional-analysis-and-pruning)
    * [meQTL replication meDIPseq](#meqtl-replication-medipseq) 
@@ -60,20 +60,19 @@ PEER factors correspond to hidden sources of variation, learned by Bayesian prob
 
 ## Causal analyses (Mendelian Randomisation and Colocalisation) 
 
-We elucidated the putative causal contribution of sentinel CpG methylation to DCM and proximal gene expression using [SMR](https://yanglab.westlake.edu.cn/software/smr/#Overview).
+We elucidated the putative causal contribution of sentinel CpG methylation to DCM and proximal gene expression using [SMR](https://yanglab.westlake.edu.cn/software/smr/#Overview). Significant associations were validated using one-sample MR and underwent colocalisation analysis to assess the posterior probability of a shared causal variant underlying the association between the two assessed traits 
+
+The primary SMR analysis utilizes SNPs linked to sentinel CpG methylation (known as 'methylation quantitative trait loci') derived from MAGNet left ventricular samples in the current investigation, as well as publicly-available genetic associations from the following sources:
+  - [GWAS of DCM in UKBiobank cohort](https://humandbs.biosciencedbc.jp/en/hum0197-v3)
+  - [Left ventricular eQTL from GTex v8 release](https://console.cloud.google.com/storage/browser/gtex-resources?pli=1)
+
+Individual-level genotype, methylation and expression/disease status data from the MAGNet cohort were used for one-sample MR analyses.
 
 The scripts in this repository detail the primary SMR analysis, one-sample MR validation of SMR-significant hits, and colocalisation analysis of genetic associations for the assessed traits. 
 
-The primary SMR analysis utilises SNPs linked to sentinel CpG methylation (known as 'methylation quantitative trait loci') derived from MAGNet left ventricular samples in the current investigation, as well as publicly-available genetic associations from the following sources: 
-[GWAS of DCM in UKBiobank cohort](https://humandbs.biosciencedbc.jp/en/hum0197-v3)
-[Left ventricular eQTL from GTex v8 release](https://console.cloud.google.com/storage/browser/gtex-resources?pli=1)
-
-
 ## Weighted gene correlation network analysis (WGCNA)
 
-We employed WGCNA to detect co-methylation modules amongst DCM-associated CpGs.
-
-Software/packages used: WGCNA (R)
+We employed WGCNA to detect co-methylation modules amongst DCM-associated CpGs (discovery EWAS FDR<0.05, SD>0.02).
 
 ## Construction of methylation risk score (MRS) from fine-mapping data and examining associations with CVD
 
