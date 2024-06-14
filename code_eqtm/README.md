@@ -3,7 +3,7 @@ This repository includes scripts for analyzing expression quantitative trait met
 
 ## cis-eQTM analysis 
 
-* `2_ciseQTM_analysis.R` : performs cis-eQTM (expression quantitative trait methylation) analysis to investigate
+* `ciseQTM_analysis.R` : performs cis-eQTM (expression quantitative trait methylation) analysis to investigate
 relationships between sentinel CpG methylation and proximal gene expression (<1Mb based on gene transcriptional start site).
 
 ## Estimating PEER factors
