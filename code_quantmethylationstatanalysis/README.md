@@ -17,9 +17,15 @@ The scripts in this various repository facilitate tasks in methylation data prep
 
 ## Trans-ancestry meta-analysis (METAL)
 
-# This script executes an inverse-variance weighted meta-analysis of ancestry-specific regression results of individual CpG loci against DCM (CAU, AA) 
+* `8_metaanalyse_transancestry_metal.txt` : this is the runfile for inverse-variance weighted meta-analysis of ancestry-specific regression results of individual CpG loci against DCM (CAU, AA). 
 
+To run this script, set the working directory to the same directory as where the METAL software resides. Next, 
+execute the runfile as follows 
+```
+SOURCE 8_metaanalyse_transancestry_metal.txt
+```
 
-## Constructing background set of EPIC Array CpGs for enrichment analyses
+## Identification of sentinel CpGs
 
-* 'permutation.R' Script generates a background consisting of 1000 permuted sets of CpGs, each equal in length to the number of DCM sentinel CpG set (n=194). A sliding-window approach previously described in McAllan et al. 2023 Nat Commun [https://www.nature.com/articles/s41467-023-38439-z](https://www.nature.com/articles/s41467-023-38439-z) is implemented to select EPIC array CpGs of equivalent methylation levels and variablity to each sentinel CpG.
+* `9_identify_sentinelcpgs_dcm.R` : assigns candidate sentinel CpGs to unique genomic loci (>1Mb apart).
+* `10_regression_conditional.R` : identifies independent signals amongst candidate sentinel CpGs at genomic loci with >1 CpG associated with DCM (discovery EWAS Bonferroni-corrected P<0.05). Signals were considered sentinel CpGs if they remained significantly associated with DCM (Bonferroni-corrected P<0.05) after conditioning on the lead signal. As in EWAS, conditional analysis was first conducted separately by ancestry, followed by trans-ancestry meta-analysis. 
