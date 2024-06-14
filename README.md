@@ -50,11 +50,13 @@ The scripts in this repository were used for enrichment analysis and calculation
 ## Expression quantitative trait methylation analysis
 
 We identified significant associations between sentinel CpG methylation and proximal gene expression (+/- 1Mb) of the sentinel CpG. Replicated eQTMs were defined as significant 
-eQTMs in the discovery cohort (MAGNet; disc FDR P<0.05) for which replication testing (BMCB) confirmed consistent directionality of association. 
+eQTMs in the discovery cohort (MAGNet; disc FDR P<0.05) for which replication testing (BMCB) confirmed consistent directionality of association. Association testing was performed using the R package MatrixEQTL using the following model: 
+
 ```
 gene expression ~  methylation + Age + Gender + ancestry + RNA Integrity Number(RIN) + 5 PEER factors
 ```
-Software/packages used: MatrixEQTL (R)
+
+PEER factors correspond to hidden sources of variation, learned by Bayesian probabilistic estimation of residual factors to accurately capture and account for latent influences in the data, thereby enhancing the robustness of statistical models. The choice of number of PEER factors to learn was informed by the [GTex eQTL mapping study](https//www.nature.com/articles/nature24277): for N < 150, use 15 PEERs; 150 <= N < 250, use 30 PEERs; N >= 250, use 35 PEERs. 
 
 ## Causal analyses (Mendelian Randomisation and Colocalisation) 
 
