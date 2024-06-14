@@ -27,5 +27,5 @@ SOURCE 8_metaanalyse_transancestry_metal.txt
 
 ## Identification of sentinel CpGs
 
-* `9_identify_sentinelcpgs_dcm.R` : assigns candidate sentinel CpGs to unique genomic loci (>1Mb apart).
+* `9_identify_sentinelcpgs_dcm.R` : assigns candidate sentinel CpGs to unique genomic loci (>1Mb apart), identifies the lead signal at each locus and highlights loci wth more than one candidate CpG for conditional analysis to identify independent signals.
 * `10_regression_conditional.R` : identifies independent signals amongst candidate sentinel CpGs at genomic loci with >1 CpG associated with DCM (discovery EWAS Bonferroni-corrected P<0.05). Signals were considered sentinel CpGs if they remained significantly associated with DCM (Bonferroni-corrected P<0.05) after conditioning on the lead signal. As in EWAS, conditional analysis was first conducted separately by ancestry, followed by trans-ancestry meta-analysis. 
