@@ -54,3 +54,25 @@ eQTMs in the discovery cohort (MAGNet; disc FDR P<0.05) for which replication te
 ```
 gene expression ~  methylation + Age + Gender + ancestry + RNA Integrity Number(RIN) + 5 PEER factors
 ```
+Software/packages used: MatrixEQTL (R)
+
+## Causal analyses (Mendelian Randomisation and Colocalisation) 
+
+We elucidated the putative causal contribution of sentinel CpG methylation to DCM and proximal gene expression using [SMR](https://yanglab.westlake.edu.cn/software/smr/#Overview).
+
+The scripts in this repository detail the primary SMR analysis, one-sample MR validation of SMR-significant hits, and colocalisation analysis of genetic associations for the assessed traits
+
+Software/packages used: SMR, AER(R), coloc(R)
+
+## Weighted gene correlation network analysis (WGCNA)
+
+We employed WGCNA to detect co-methylation modules amongst DCM-associated CpGs.
+
+Software/packages used: WGCNA (R)
+
+## Construction of methylation risk score (MRS) from fine-mapping data and examining associations with CVD
+
+Following fine-mapping of 28 DCM sentinel CpGs and testing individual CpGs within fine-mapped regions for CVD trait associations, we constructed CVD-trait specific MRS as a weighted sum of methylation betas from CpGs within fine-mapped regions and tested MRS for association with CVD.
+
+
+
