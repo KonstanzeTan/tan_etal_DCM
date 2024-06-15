@@ -1,6 +1,5 @@
 ## General 
-This repository contains scripts for identifying co-methylation modules from DCM-associated CpGs (discovery EWAS FDR P<0.05, consistent directionality of association confirmed in replication cohort, SD>0.02)
-
+This repository contains scripts for identifying co-methylation modules from DCM-associated CpGs
 
 ## Construction of co-methylation modules (WGCNA)
 
