@@ -64,7 +64,7 @@ The scripts in this repository detail the primary SMR analysis, one-sample MR va
 
 ## Weighted gene correlation network analysis (WGCNA)
 
-We employed WGCNA to detect co-methylation modules amongst DCM-associated CpGs (discovery EWAS FDR<0.05, SD>0.02).
+We employed WGCNA to detect co-methylation modules amongst DCM-associated CpGs (discovery EWAS FDR<0.05, directionality of association confirmed in replication cohort, SD>0.02).
 
 ## Construction of methylation risk score (MRS)
 
