@@ -27,7 +27,7 @@ The main EWAS model is
 DCM ~beta(quantile-normalised) + Age + Gender + principal components of control probes capturing ~95% of control probe variation 
 ```
 
-The scripts in this repository facilitate various tasks in methylation data preprocessing and quality control, calculation of methylation betas, epigenome-wide association analysis, meta-analysis, adjustment for test-statistic inflation and finally the identification of sentinel CpGs.
+The scripts in this repository facilitate various tasks in methylation data preprocessing and quality control, calculation of methylation betas, epigenome-wide association analysis, meta-analysis, adjustment for test-statistic inflation and finally the identification of sentinel CpGs. Directory: [Quantification and statistical analysis of DNA methylation](./code_quantmethylationstatanalysis/).
 
 ## Enrichment analysis of genomic regulatory features
 
