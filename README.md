@@ -1,9 +1,5 @@
 # Code for Epigenome-wide association analysis
 
-Citation: 
-**[title.](URL)**
-
-Authors
 
 ## Table of Contents
 
