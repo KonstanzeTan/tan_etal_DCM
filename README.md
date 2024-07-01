@@ -69,7 +69,7 @@ The scripts in [Co-methylation analyses](./code_wgcna/) identify common co-methy
 
 Following fine-mapping of 28 DCM sentinel CpGs and testing individual CpGs within fine-mapped regions for CVD trait associations, we constructed CVD-trait specific MRS as a weighted sum of methylation betas from CpGs within fine-mapped regions and tested MRS for association with CVD.
 
-The scripts in [MRS(./code_MRS/) detail the construction of region and trait-specific MRS and testing their associations with the respective CVD traits.
+The scripts in [MRS](./code_MRS/) detail the construction of region and trait-specific MRS and testing their associations with the respective CVD traits.
 
 
 
