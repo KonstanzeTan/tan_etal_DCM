@@ -1,4 +1,4 @@
-# Code for Epigenome-wide association analysis Tan et el. 2024
+# Code for Epigenome-wide association analysis
 
 Citation: 
 **[title.](URL)**
