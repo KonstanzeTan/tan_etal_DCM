@@ -2,7 +2,7 @@
 
 # Define file paths
 test_set="sentinels_194_sorted.bed"
-background_dir="/scratch/users/ntu/konstan7/20240820_enr_genreg/backg_bedfiles"
+background_dir="<YOUR_DIRECTORY>/backg_bedfiles"
 features_file="combined_roadmap39celltypes_dhs_histonemarks_sorted.bed"
 output_file="enriched_genefeatures.txt"
 
