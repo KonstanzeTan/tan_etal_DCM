@@ -27,11 +27,7 @@ The scripts in [Quantification and statistical analysis of DNA methylation](./co
 
 ## Enrichment analysis of genomic regulatory features
 
-We analysed sentinel CpGs for enrichment in various genomic regulatory features using a permutation testing approach, whereby sentinel CpG overlap of genomic regulatory features is compared to a background set comprising permutations of other EPIC array CpGs matched to sentinel CpGs by genomic location, methylation levels and/or variability. This addresses bias inherent in methylation arrays, which preferentially assay pre-determined genomic sites and well-annotated genes
-
-Enrichment analysis for tissue-specific chromatin states, histone-marked regions and DNAse 1 hypersensitive sites was conducted using a local installation of eFORGE v2 downloaded from [Altius Institute eForge](https://eforge.altiusinstitute.org/). Besides enrichment, depletion was also investigated by specifying the  `--depletion` flag. Significant enrichment or depletion was not assessed using the default binomial P value output by the software. Instead, we defined significant enrichment or depletion by calculating a permutation P value usign overlap counts from each of the background permutation sets. eFORGE auto-constructs a background set of permuted CpGs matched to sentinel CpGs by CpG island and gene annotation. 
-
-Enrichment analysis for expression quantitative trait methylation loci (eQTM) and transcription factor binding sites (TFBS) were assessed using a manually constructed background set comprising permutations of EPIC array CpGs matched to sentinel CpGs by methylation levels and variability.
+We analysed sentinel CpGs for enrichment in various genomic regulatory features using a permutation testing approach. Specifically, sentinel CpG overlap of genomic regulatory features was compared to a background set comprising permutations of EPIC array CpGs matched by methylation levels and variability. This addresses bias inherent in methylation arrays, which preferentially assay pre-determined genomic sites and well-annotated genes. 
 
 The scripts in [Enrichment analysis of genomic regulatory features](./code_enrdepl_genereg/) were used for enrichment analysis and calculation of permutation p values (eFORGE) as well as manual construction of background set of permuted EPIC array CpGs. 
 
