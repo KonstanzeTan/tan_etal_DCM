@@ -2,9 +2,9 @@
 
 # Define file paths
 test_set="sentinels_194_sorted.bed"  # Replace with your actual test set file name
-background_dir="/scratch/users/ntu/konstan7/20240820_enr_genreg/backg_bedfiles"  # Directory containing the 1000 background files
+background_dir="<YOUR_DIRECTORY>/backg_bedfiles"  # Directory containing the 1000 background files
 features_file="combined_roadmap39celltypes_dhs_histonemarks_sorted.bed"  # File with chr, start, end, cell type, and feature
-output_file="enriched_genefeatures.txt"
+output_file="enriched_features.txt"
 
 # Initialize the output file with headers
 echo -e "test_set_overlap_count\taverage_background_overlap_count\tcell_type\tfeature" > "$output_file"
