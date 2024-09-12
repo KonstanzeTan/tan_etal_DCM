@@ -1,5 +1,5 @@
 ## General 
-This repository contains scripts for performing the enrichment analysis, including constructing a background of CpGs matched to Sentinel CpGs by methylation levels and variablity, as well as determining significant enrichment or depletion of sentinel CpGs for gene regulatory features.
+This repository contains scripts for performing the enrichment analysis, including constructing a background of CpGs matched to Sentinel CpGs by methylation levels and variablity, as well as determining significant enrichment or depletion of sentinel CpGs for gene regulatory features. While the provided scripts analyse sentinel CpG enrichment in Roadmap learned chromatin states, DHS and 5 core histone marks, a similar strategy was applied in the analysis of co-methylated CpG enrichment in transcription factor binding sites (TFBS)
 
 ## Constructing background set of EPIC Array CpGs for enrichment analyses
 
