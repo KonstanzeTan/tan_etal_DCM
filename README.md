@@ -25,11 +25,11 @@ DCM ~beta(quantile-normalised) + Age + Gender + principal components of control 
 
 The scripts in [Quantification and statistical analysis of DNA methylation](./code_quantmethylationstatanalysis/) facilitate various tasks in methylation data preprocessing and quality control, calculation of methylation betas, epigenome-wide association analysis, meta-analysis, adjustment for test-statistic inflation and finally the identification of sentinel CpGs. 
 
-## Enrichment analysis of genomic regulatory features
+## Enrichment/depletion analysis of genomic regulatory features
 
 We analysed sentinel CpGs for enrichment in various genomic regulatory features using a permutation testing approach. Specifically, sentinel CpG overlap of genomic regulatory features was compared to a background set comprising permutations of EPIC array CpGs matched by methylation levels and variability. This addresses bias inherent in methylation arrays, which preferentially assay pre-determined genomic sites and well-annotated genes. 
 
-The scripts in [Enrichment analysis of genomic regulatory features](./code_enrdepl_genereg/) were used for enrichment analysis and calculation of permutation p values (eFORGE) as well as manual construction of background set of permuted EPIC array CpGs. 
+The scripts in [Enrichment analysis of genomic regulatory features](./code_enrdepl_genereg/) were utilized to create background CpG sets, perform enrichment analysis, and determine significance at a permutation p-value threshold of p<0.001. 
 
 ## Expression quantitative trait methylation analysis
 
